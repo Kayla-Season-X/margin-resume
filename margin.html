@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgrey;
+        }
+        header{
+            background-color: rgb(51, 51, 51);
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+            height:150px;
+        }
+        nav{
+            text-align: center;
+            padding:10px;
+        }
+        nav h1{
+            font-size: 2.2em;
+        }
+        nav ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding-right:40px;
+        }
+        nav a{
+            color:white;
+            text-decoration: none;
+            margin:20px;
+        }
+        .container{
+            margin-top:20px;
+            background-color: white;
+            height: 300px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            
+        }
+        .container img{
+            width:250px;
+            border:white solid 1px;
+            border-radius: 50px;
+            padding:30px;
+            margin: auto;
+        }
+        .container h1{
+            padding-top:30px;
+            font-size: 2.1em;
+            color:rgb(51, 51, 51);
+        }
+        .container p{
+            font-size: 1.2em;
+            padding:20px;
+        }
+        button{
+            padding: 15px;
+            border-radius: 10px;
+            border: solid 1px white;
+            padding-left:30px;
+            padding-right:30px;
+            font-size: 1em;
+            color:white;
+            background-color:rgb(51, 51, 51) ;
+        }
+        button:hover{
+            background-color: grey;
+        }
+        .section{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .section h1{
+            text-align: center;
+            color:rgb(51, 51, 51);
+        }
+        .section-content{
+            display: flex;
+            height:350px;
+            border-radius: 10px;
+
+
+        }
+        .section-items{
+            text-align: center;
+            width:400px;
+            border-radius: 10px;
+            background-color: white;
+            margin:30px;
+            padding:20px;
+            font-size: 1.2em;
+        }
+        footer{
+            color:white;
+            padding:30px;
+            font-size: 1.2em;
+            background-color: rgb(51, 51, 51);
+            text-align: center;
+        }
+        @media (max-width:600px){
+            .container{
+                flex-direction: column;
+                height: 100%;
+            }
+            .section-content{
+                flex-direction: column;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>My Tech Blog</h1>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+        <img src="Kayla Yocum - featured.PNG">
+        <div>
+        <h1>⭐Featured Post: The Future of Web Development</h1>
+        <p>Discover the latest trends and innovations shaping the web development industry. From new frameworks to emerging technologies, here's what you need to know</p>
+        <button>Read More</button>
+        </div>
+    </section>
+
+    <div class="section">
+        <h1>Recent Posts</h1>
+        <div class="section-content">
+            <div class="section-items">
+            <h2>Understanding CSS Flexbox</h2>
+            <p>Flexbox is a powerful tool that allows developers to create flexible layouts with ease. Learn how to master it!</p>
+            <button>Read More</button>
+            </div>
+        <div class="section-items">
+            <h2>Java Script ES2024 Features</h2>
+            <p>Explore the upcoming features in Java Script ES2024 and how they can improve your web development workflow.</p>
+            <button>Read More</button>
+        </div>
+        <div class="section-items">
+            <h2>Responsive Design with Flexbox</h2>
+            <p>Flexbox makes responsive design easier.Find out how you can build flexible layouts with this tool.</p>
+            <button>Read Me</button>
+        </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 My Tech Blog</p>
+    </footer>
+</body>
+</html>
